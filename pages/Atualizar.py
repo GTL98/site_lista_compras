@@ -32,7 +32,7 @@ else:
     dados = ''
 
     for chave in dados_json.keys():
-        dados += f'{chave} {dados_json[chave]}\n\n'
+        dados += f'{chave}-{dados_json[chave]}\n'
 
     # --- Adicionar a caixa de texto para atualizar a lista de compras --- #
     itens_compras = st.text_area('Atualizar a lista de compras:', height=400, value=dados)
