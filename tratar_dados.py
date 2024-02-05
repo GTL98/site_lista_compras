@@ -8,9 +8,9 @@ def tratar_dados(dados: list):
     itens_bruto = [item for item in dados.split('\n') if item != '']
 
     # --- Obter somente os itens --- #
-    itens = [item.split(' ')[0].strip() for item in itens_bruto]
+    itens = [item.split('-')[0].strip() for item in itens_bruto]
 
     # --- Obter somente o valores --- #
-    valores = [float(valor.split(' ')[1].strip().replace(',', '.')) for valor in itens_bruto]
+    valores = [float(valor.split('-')[1].strip().replace(',', '.')) for valor in itens_bruto]
 
     return itens, valores
