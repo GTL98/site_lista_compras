@@ -17,10 +17,10 @@ st.title('Adicionar compras')
 st.write('---')
 
 # --- Adicionar uma observação --- #
-st.subheader('Colocar os preços separados por espaço e dois ENTER após cada produto adicionado.')
+st.subheader('Colocar os preços separados por hífen (-) e ENTER após cada produto adicionado.')
 st.subheader('''Exemplo:
-- Cebola 5,99
-- Laranja 3,89''',
+- Cebola-5,99
+- Laranja-3,89''',
              divider='rainbow')
 
 # --- Caixa para adicionar os itens de compra --- #
